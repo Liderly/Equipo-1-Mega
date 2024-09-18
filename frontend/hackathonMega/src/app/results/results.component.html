@@ -1,87 +1,67 @@
-<p>results works!</p>
+<!DOCTYPE html>
+<html lang="es">
 
-<div class="aro ckf dit">
-    <div class="cct cgl">
-        <div class="cfb">
-            <h1 class="awe awm awv ayb">Users</h1>
-            <p class="lb awg axz">A list of all the users in your account including their name, title, email and role.
-            </p>
-        </div>
-        <div class="lh cbh cbx cfc"><button type="button"
-                class="lu aeb ajw arl asb avr awg awm ban bbt biv bpb bpc bpe bpl">Add user</button></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega+</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<header class="w-full flex justify-between items-center">
+    <!-- Logo -->
+    <div>
+        <img src="../logo_frontal.png" alt="Logo de la empresa" class="h-12" />
     </div>
-    <div class="lm ma">
-        <div class="gc gl adp bzy cyq">
-            <div class="lv tz asb avu ckf dit">
-                <div class="adn bbo bbz bce bdy cim">
-                    <table class="tz acj aco">
-                        <thead class="aiv">
+    <!-- Perfil -->
+    <div>
+        <img src="../user.png" alt="Perfil de usuario" class="h-16 w-16 rounded-full border-2 border-black" />
+    </div>
+</header>
+
+<body class="bg-gray-100">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="max-w-7xl w-full p-6">
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <div class="flex justify-center items-center mb-4 text-center">
+                    <div *ngIf="employeeNumber">
+                        <h1 class="text-xl font-semibold">Ordenes de trabajo realizadas por la cuadrilla {{employeeNumber}}</h1>
+                    </div>
+                </div>
+                
+
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-300">
+                        <thead class="bg-gray-200">
                             <tr>
-                                <th scope="col" class="asg att aui avq awg awm ayb clr">Name</th>
-                                <th scope="col" class="arl asg avq awg awm ayb">Title</th>
-                                <th scope="col" class="arl asg avq awg awm ayb">Email</th>
-                                <th scope="col" class="arl asg avq awg awm ayb">Role</th>
-                                <th scope="col" class="ab asg ats auk clz"><span class="t">Edit</span></th>
+                                <th class="py-2 px-4 border-b text-left">ID</th>
+                                <th class="py-2 px-4 border-b text-left">ID Cuadrilla</th>
+                                <th class="py-2 px-4 border-b text-left">ID Empleado</th>
+                                <th class="py-2 px-4 border-b text-left">ID Trabajo</th>
+                                <th class="py-2 px-4 border-b text-left">ID Suscriptor</th>
+                                <th class="py-2 px-4 border-b text-left">Fecha</th>
+                                <th class="py-2 px-4 border-b text-left">Estatus</th>
                             </tr>
                         </thead>
-                        <tbody class="acj acn alt">
-                            <tr>
-                                <td class="adt asi att aui awg awk ayb clr">Lindsay Walton</td>
-                                <td class="adt arl asi awg axx">Front-end Developer</td>
-                                <td class="adt arl asi awg axx">lindsay.walton.com</td>
-                                <td class="adt arl asi awg axx">Member</td>
-                                <td class="ab adt asi ats auk avs awg awk clz"><a href="#" class="ayn bll">Edit<span
-                                            class="t">, Lindsay Walton</span></a></td>
-                            </tr>
-                            <tr>
-                                <td class="adt asi att aui awg awk ayb clr">Courtney Henry</td>
-                                <td class="adt arl asi awg axx">Designer</td>
-                                <td class="adt arl asi awg axx">courtney.henry.com</td>
-                                <td class="adt arl asi awg axx">Admin</td>
-                                <td class="ab adt asi ats auk avs awg awk clz"><a href="#" class="ayn bll">Edit<span
-                                            class="t">, Courtney Henry</span></a></td>
-                            </tr>
-                            <tr>
-                                <td class="adt asi att aui awg awk ayb clr">Tom Cook</td>
-                                <td class="adt arl asi awg axx">Director of Product</td>
-                                <td class="adt arl asi awg axx">tom.cook.com</td>
-                                <td class="adt arl asi awg axx">Member</td>
-                                <td class="ab adt asi ats auk avs awg awk clz"><a href="#" class="ayn bll">Edit<span
-                                            class="t">, Tom Cook</span></a></td>
-                            </tr>
-                            <tr>
-                                <td class="adt asi att aui awg awk ayb clr">Whitney Francis</td>
-                                <td class="adt arl asi awg axx">Copywriter</td>
-                                <td class="adt arl asi awg axx">whitney.francis.com</td>
-                                <td class="adt arl asi awg axx">Admin</td>
-                                <td class="ab adt asi ats auk avs awg awk clz"><a href="#" class="ayn bll">Edit<span
-                                            class="t">, Whitney Francis</span></a></td>
-                            </tr>
-                            <tr>
-                                <td class="adt asi att aui awg awk ayb clr">Leonard Krasner</td>
-                                <td class="adt arl asi awg axx">Senior Designer</td>
-                                <td class="adt arl asi awg axx">leonard.krasner.com</td>
-                                <td class="adt arl asi awg axx">Owner</td>
-                                <td class="ab adt asi ats auk avs awg awk clz"><a href="#" class="ayn bll">Edit<span
-                                            class="t">, Leonard Krasner</span></a></td>
-                            </tr>
-                            <tr>
-                                <td class="adt asi att aui awg awk ayb clr">Floyd Miles</td>
-                                <td class="adt arl asi awg axx">Principal Designer</td>
-                                <td class="adt arl asi awg axx">floyd.miles.com</td>
-                                <td class="adt arl asi awg axx">Member</td>
-                                <td class="ab adt asi ats auk avs awg awk clz"><a href="#" class="ayn bll">Edit<span
-                                            class="t">, Floyd Miles</span></a></td>
-                            </tr>
+                        <tbody>
+                            <ng-container *ngFor="let item of lista">
+                                <tr *ngIf="item[1] == employeeNumber" class="hover:bg-gray-100">
+                                    <td class="py-2 px-4 border-b">{{item[0]}}</td> <!-- Nombre -->
+                                    <td class="py-2 px-4 border-b">{{item[1]}}</td> <!-- Título -->
+                                    <td class="py-2 px-4 border-b">{{item[2]}}</td> <!-- Email -->
+                                    <td class="py-2 px-4 border-b">{{item[3]}}</td> <!-- Rol -->
+                                    <td class="py-2 px-4 border-b">{{item[4]}}</td> <!-- Rol -->
+                                    <td class="py-2 px-4 border-b">{{item[5]}}</td> <!-- Rol -->
+                                    <td class="py-2 px-4 border-b text-blue-500 cursor-pointer">{{item[6]}}</td>
+                                    <!-- Editar -->
+                                </tr>
+                            </ng-container>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</body>
 
-<div *ngFor="let item of lista">
-    {{item}}
-
-</div>
+</html>
