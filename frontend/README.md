@@ -61,9 +61,9 @@ Mediante una interfaz amigable para los usuarios queremos lograr que mediante un
 
 # Demostración del producto
 
-<img src="public/image2.png" alt="Karma" whith="5vw">
+<img src="../image2.png" alt="Karma" whith="5vw">
 
-<img src="public/image3.png" alt="Karma" whith="5vw">
+<img src="../image3.png" alt="Karma" whith="5vw">
 
 # Contribuyentes al proyecto
 
