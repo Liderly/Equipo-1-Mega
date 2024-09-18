@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { EnviaDatoService } from '../envia-dato.service';
 
 @Component({
   selector: 'app-results',
@@ -10,8 +11,32 @@ import { Component } from '@angular/core';
 })
 export class ResultsComponent {
 
-  lista: any= [[1, 2, 3, 4, 5],
-    [1, 2, 3, 4, 5],
+  valor: any;
+  employeeNumber: string = '';
+
+  lista: any = [[1, 1002, 2, 'Juan Perez', 20240001, '18/09/2024', 'Activo', 180, '$500'],
+  [2, 1002, 3, 'Maria Gomez' , 20240011, '11/09/2024', 'Activo', 211, '$650'],
+  [3, 1005, 2, 'Luis Fernandez', 20240001, '05/03/2024', 'Activo', 180, '$500'],
+  [4, 1001, 1, 'Ana Martinez', 20240002, '15/07/2024', 'Activo', 50, '$0'],
+  [5, 1003, 3, 'Carlos Sanchez', 20240003, '22/10/2024', 'Activo', 211, '$650'],
+  [6, 1004, 4, 'Lucia Ramirez', 20240004, '30/05/2024', 'Activo', 100, '$300'],
+  [7, 1006, 2, 'Arturo Mendoza', 20240005, '01/12/2024', 'Activo', 180, '$500'],
+  [8, 1002, 1, 'Ruben Almazan', 20240006, '18/08/2024', 'Activo', 50, '$0'],
+  [9, 1007, 3, 'Ivonne Alvarez', 20240007, '14/04/2024', 'Activo', 211, '$650'],
+  [10, 1008, 4, 'Omar Ramirez', 20240008, '27/06/2024', 'Activo', 100, '$300'],
+  [11, 1002, 1, 'Jesus Molina', 20240009, '10/02/2024', 'Activo', 50, '$0'],
+  [12, 1010, 2, 'Pedro Avilar', 20240010, '23/09/2024', 'Activo', 180, '$500']
   ]
+
+  constructor(private employeeService: EnviaDatoService) { }
+
+  ngOnInit() {
+    this.employeeService.currentEmployee.subscribe(employee => {
+      this.employeeNumber = employee;
+      this.valor = this.employeeNumber
+    });
+  }
+
+  
 
 }

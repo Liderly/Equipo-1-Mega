@@ -13,23 +13,24 @@
         <p class="text-center text-2xl leading-relaxed">Bienvenido al sistema</p>
         <p class="text-center text-3xl leading-relaxed"> Comprobación de puntos</p>
         <br>
-        <form>
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm">
             <div class="flex justify-center mb-4">
-                <img src="../logo_frontal.png" alt="Logo"> <!-- Falta ajustar la imagen -->
+                <img src="../logo_frontal.png" alt="Logo" class="w-96 h-auto"> <!-- Ancho de 24rem -->
             </div>
+            
+            
             <p class="text-center mb-4">Inicie sesión para acceder</p>
             <div class="mb-4">
                 <label for="name" class="block mb-2">Nombre:</label>
-                <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
+                <input type="text" id="name" name="name" ngModel required class="w-full p-2 border border-gray-300 rounded">
             </div>
             <div class="mb-4">
                 <label for="password" class="block mb-2">Contraseña:</label>
-                <input type="password" id="password" name="password" required
-                    class="w-full p-2 border border-gray-300 rounded">
+                <input type="password" id="password" name="password" ngModel required class="w-full p-2 border border-gray-300 rounded">
             </div>
-            <input type="submit" value="Iniciar Sesion"
-                class="w-full p-2 bg-black text-white rounded cursor-pointer hover:bg-white hover:text-black border border-black transition">
+            <input type="submit" value="Iniciar Sesion" class="w-full p-2 bg-black text-white rounded cursor-pointer hover:bg-white hover:text-black border border-black transition">
         </form>
+        
     </div>
 </body>
 
