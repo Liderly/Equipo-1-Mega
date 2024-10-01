@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace backend.Models;
+namespace Backend_HackathonMega.Models;
 
 public partial class Trabajo
 {
-    public int Idtrabajo { get; set; }
+    public int TrabajoId { get; set; }
 
-    public string? Descripcion { get; set; }
+    public string Descripcion { get; set; } = null!;
 
-    public int? Puntos { get; set; }
+    public int? PuntosTrabajoId { get; set; }
 
-    public virtual ICollection<OrdenTrabajo> OrdenTrabajos { get; set; } = new List<OrdenTrabajo>();
+    public virtual ICollection<OrdenesTrabajo> OrdenesTrabajos { get; set; } = new List<OrdenesTrabajo>();
+
+    public virtual PuntosTrabajo? PuntosTrabajo { get; set; }
 }

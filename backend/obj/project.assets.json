@@ -8140,11 +8140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moise\\Documents\\Hackathon_Mega\\Equipo-1-Mega\\backend\\backend.csproj",
-      "projectName": "backend",
-      "projectPath": "C:\\Users\\moise\\Documents\\Hackathon_Mega\\Equipo-1-Mega\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\moise\\OneDrive\\Documentos\\01 Megacable - Liderly\\0 - HackathonMega\\Backend-HackathonMega\\Backend-HackathonMega.csproj",
+      "projectName": "Backend-HackathonMega",
+      "projectPath": "C:\\Users\\moise\\OneDrive\\Documentos\\01 Megacable - Liderly\\0 - HackathonMega\\Backend-HackathonMega\\Backend-HackathonMega.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moise\\Documents\\Hackathon_Mega\\Equipo-1-Mega\\backend\\obj\\",
+      "outputPath": "C:\\Users\\moise\\OneDrive\\Documentos\\01 Megacable - Liderly\\0 - HackathonMega\\Backend-HackathonMega\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WOCnc1wqRmg=",
+  "dgSpecHash": "l2v86AcO4EI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\moise\\Documents\\Hackathon_Mega\\Equipo-1-Mega\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\moise\\OneDrive\\Documentos\\01 Megacable - Liderly\\0 - HackathonMega\\Backend-HackathonMega\\Backend-HackathonMega.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moise\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
