@@ -1,0 +1,7 @@
+# Visual Studio Code
+./Backend.vscode/
+
+# Build results
+./Backend/bin/
+./Backend/obj/
+./Backend/out/
