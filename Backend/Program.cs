@@ -39,7 +39,18 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    // Redirigir a Swagger por defecto
+    app.Use(async (context, next) =>
+    {
+        if (context.Request.Path == "/")
+        {
+            context.Response.Redirect("/swagger");
+            return;
+        }
+        await next();
+    });
 }
+
 // Configurar el middleware de la app para utilizar CORS
 app.UseCors(myAllowSpecificOrigins);
 
