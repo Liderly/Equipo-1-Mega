@@ -45,10 +45,10 @@ y abrir en VS Code.
 
 Corre la aplicación, este repositorio cuenta tanto con la parte del Frontend como con el Backend de la aplicación, cada carpeta con su parte correspondiente lleva su descripción de como ejecutar el proyecto .  
 
-Tabla tabulador de puntos y bonos correspondientes.  
+## Tabla tabulador de puntos y bonos correspondientes.  
 ![1-Tabulador](https://github.com/user-attachments/assets/fd425c87-4742-4897-9599-a03a04435f82)
 
-Diagrama de Base de datos.  
+## Diagrama de Base de datos.  
 ![2-DB](https://github.com/user-attachments/assets/85df02f5-2b00-41a8-8fcb-8f135ad3abe1)
 
 # Contribuyentes al proyecto
