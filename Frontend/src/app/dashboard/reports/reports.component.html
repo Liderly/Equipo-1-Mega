@@ -1,0 +1,96 @@
+<div class="min-h-screen bg-gray-50 p-4" id="contenido-a-imprimir">
+  <a href="/dashboard/cuadrilla" class="text-blue-600 hover:text-blue-800 mb-4 inline-block">
+    &larr; Regresar
+  </a>
+
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="p-6 cursor-pointer" (click)="toggleBody()">
+      <div class="flex justify-between items-center" *ngIf="datos">
+        <div>
+          <h1 class="text-2xl font-bold text-gray-800">
+            Cuadrilla Num. {{ datos.num_cuadrilla }}
+          </h1>
+          <p class="text-md text-gray-600">
+            Fecha contemplada: 01/01/2024 - 07/01/2024
+          </p>
+        </div>
+        <div class="text-right" *ngIf="lista_bonos">
+          <p class="text-gray-600">
+            Total de puntos: <span class="font-semibold">{{lista_bonos.totalPuntosPorTecnico}}</span>
+          </p>
+          <p class="text-xl font-bold text-green-600">
+            Cantidad de dinero: ${{lista_bonos.valorPago}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div #cardBody class="hidden p-6 border-t border-gray-200">
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4 cursor-pointer" (click)="empleados()">
+          Lista de empleados
+        </h2>
+        <div *ngIf="showEmpleados" class="overflow-x-auto">
+          <table class="min-w-full bg-white">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="py-2 px-4 text-left">ID</th>
+                <th class="py-2 px-4 text-left">Empleado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="
+                  let empleado of lista_empleados
+                " class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-2 px-4">{{ empleado.numTecnico }}</td>
+                <td class="py-2 px-4">{{ empleado.nombreTecnico }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-800 mb-4 cursor-pointer" (click)="ordenes()">
+          Órdenes realizadas
+        </h2>
+        <div *ngIf="showOrdenes" class="overflow-x-auto">
+          <table class="min-w-full bg-white">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="py-2 px-4 text-left">Fecha</th>
+                <th class="py-2 px-4 text-left">Num. Suscriptor</th>
+                <th class="py-2 px-4 text-left">Trabajo</th>
+                <th class="py-2 px-4 text-left">Puntos</th>
+                <th class="py-2 px-4 text-left">Detalle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="
+                  let orden of lista_ordenes_filtradas
+                " class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-2 px-4">{{ orden.fecha }}</td>
+                <td class="py-2 px-4">{{ orden.numSuscriptor }}</td>
+                <td class="py-2 px-4">{{ orden.trabajoRealizado }}</td>
+                <td class="py-2 px-4">{{ orden.puntosGenerados }}</td>
+                <td class="py-2 px-4">
+                  <button (click)="irADetalle(orden)"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded text-sm">
+                    Ver Detalle
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button (click)="generarPDF()"
+          aria-label="chat"
+          class="mt-1 w-32 h-10 rounded-xl border text-white font-bold bg-gradient-to-r from-sky-600 to-cyan-500">
+          Generar PDF
+        </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
