@@ -32,7 +32,7 @@
 ./Frontend/*.sublime-workspace
 
 # Visual Studio Code
-#./Frontend/.vscode/*
+./Frontend/.vscode/*
 !./Frontend/.vscode/settings.json
 !./Frontend/.vscode/tasks.json
 !./Frontend/.vscode/launch.json
@@ -51,3 +51,5 @@
 # System files
 ./Frontend/.DS_Store
 ./Frontend/Thumbs.db
+
+./Frontend/.angular
