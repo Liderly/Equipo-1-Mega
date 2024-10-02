@@ -36,23 +36,26 @@ El objetivo es .
 ### Para visualizar el contenido del codigo es necesario tener instalado:  
 GIT: Debe tener Instalado GIT.  
 SQL Server: En este caso la aplicación se conecta a una base de datos local realizada en SQL Server.  
+SDK .NET 8.  
+Angular v18.  
+node 20 o superior.  
 
 ## 3. ¿Cómo ejecutar la aplicación?
 
-### Clonando el proyecto y ejecutandolo desde Microsoft Visual Basic 6.0 (Desarrollador)
--- Clona el repositorio con el comando:  ```git clone https://github.com/MoisesReyesOrea/HubDeLectura.git```  
--- Desde Microsoft Visual basic 6.0 abre el proyecto en 'Open project'  
+## Clona el proyecto
+``git clone ``  
+
+y abrir en VS Code.  
+  
 -- Este repositorio no contiene el archivo con las variables de entorno de las credenciales de la base de datos SQL Server, para eso debes crear un archivo 'module'  
 (ej: ModuleEnvirontmentVariable.bas) dentro del proyecto en la carpeta 'Modules' en ese archivo ingresa las credenciales de tu DB, datos necesarios:
 
-Public Const providerDB As String = "SQLOLEDB"  
-Public Const sourceDB As String = "Nombre del servidor de tu base de datos"  
-Public Const nameDB As String = "Nombre de tu base de datos"  
-Public Const userIdDB As String = "tu usuario"  
-Public Const passDB As String = "tu contraseña"  
-Public Const connectionData As String = "Provider=" + providerDB + ";Data Source=" + sourceDB + ";Initial Catalog=" + nameDB + ";User ID=" + userIdDB + ";Password=" + passDB + ";"  
 
--- Corre la aplicacion   
+``"ConnectionStrings": {
+    "DefaultConnection": "Server=your_server_name;Database=your_database_name;Trusted_Connection=True;TrustServerCertificate=True"
+  }``
+
+-- Corre la aplicación   
 
 ## 4. Explicación
 
