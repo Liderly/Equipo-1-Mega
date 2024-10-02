@@ -21,7 +21,7 @@ http://localhost:{PuertoLocal}/swagger
 Ejemplo: http://localhost:5295/swagger  
 
 
-## APIs para consultar desde frontend si el servidor backend esta corriendo de manera local  
+## APIs para consultar desde frontend si el servidor backend está corriendo de manera local  
 
 ### API para obtener todas las cuadrillas con sus puntos y bonos  
 http://localhost:{PuertoLocal}/api/puntosallcuadrillas  
