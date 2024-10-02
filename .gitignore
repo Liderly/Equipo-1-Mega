@@ -18,6 +18,7 @@
 ./Frontend/bazel-out
 
 # Node
+Frontend/node_modules
 ./Frontend/node_modules
 ./Frontend/npm-debug.log
 ./Frontend/yarn-error.log
