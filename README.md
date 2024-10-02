@@ -19,20 +19,18 @@ hackathon-proyecto/
 │   ├── src/                      # Controladores, modelos y servicios de la API
 │   ├── README.md                 # Instrucciones específicas del backend
 │
-├── docs/                         # Documentación adicional del proyecto
-│   ├── frontend-docs/            # Documentación específica del frontend
-│   ├── backend-docs/             # Documentación específica del backend
-│   └── architecture.md           # Descripción de la arquitectura del proyecto
+├── Base de datos/                         # Documentación adicional del proyecto
+│   ├── Queries/                  # Queries que se utilizaron para la creacion de la BD.
+│   ├── Diagrama/                 # Diagrama que muestra la estructura de la base de datos.
 │
 ├── .gitignore                    # Archivos y carpetas a ignorar por Git
 ├── README.md                     # Documentación general del proyecto (este archivo)
 ```
 
-
 ### Objetivo
-El objetivo es .  
+Desarrollar una aplicación para un sistema que calcule los bonos de los técnicos instaladores de Megacable, en función de los puntos obtenidos por los trabajos que realizan. El sistema permitirá una evaluación precisa de los incentivos y recompensas, optimizando el proceso de cálculo de bonos de manera automatizada y eficiente.  
 
-## 2. Requerimientos técnicos:
+## Requerimientos técnicos:
 ### Para visualizar el contenido del codigo es necesario tener instalado:  
 GIT: Debe tener Instalado GIT.  
 SQL Server: En este caso la aplicación se conecta a una base de datos local realizada en SQL Server.  
@@ -40,32 +38,18 @@ SDK .NET 8.
 Angular v18.  
 node 20 o superior.  
 
-## 3. ¿Cómo ejecutar la aplicación?
-
 ## Clona el proyecto
-``git clone ``  
+``git clone https://github.com/Liderly/Equipo-1-Mega.git``  
 
 y abrir en VS Code.  
-  
--- Este repositorio no contiene el archivo con las variables de entorno de las credenciales de la base de datos SQL Server, para eso debes crear un archivo 'module'  
-(ej: ModuleEnvirontmentVariable.bas) dentro del proyecto en la carpeta 'Modules' en ese archivo ingresa las credenciales de tu DB, datos necesarios:
 
+Corre la aplicación, este repositorio cuenta tanto con la parte del Frontend como con el Backend de la aplicación, cada carpeta con su parte correspondiente lleva su descripción de como ejecutar el proyecto .  
 
-``"ConnectionStrings": {
-    "DefaultConnection": "Server=your_server_name;Database=your_database_name;Trusted_Connection=True;TrustServerCertificate=True"
-  }``
+Tabla tabulador de puntos y bonos correspondientes.  
+![1-Tabulador](https://github.com/user-attachments/assets/fd425c87-4742-4897-9599-a03a04435f82)
 
--- Corre la aplicación   
-
-## 4. Explicación
-
-**NOTA: Los archivos de la BD estan en este mismo repositorio en la carpeta 'DB_SQL_Server', [DB_SQL_Server](DB_SQL_Server)**  
-
-## 5. Proceso de desarrollo
-
-### Detalles
-
-
+Diagrama de Base de datos.  
+![2-DB](https://github.com/user-attachments/assets/85df02f5-2b00-41a8-8fcb-8f135ad3abe1)
 
 # Contribuyentes al proyecto
 
