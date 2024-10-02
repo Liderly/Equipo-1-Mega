@@ -2,7 +2,7 @@
 
 <div align="center">
 
-## Calculo de bonos para técnicos instaladores
+## Calculo de bonos para técnicos instaladores 👨🏻‍🔧🛜
 
 Este proyecto fue generado con Angular CLI versión 18.2.0
 
@@ -17,9 +17,8 @@ Este proyecto fue generado con Angular CLI versión 18.2.0
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
 - [Descripción de componentes](#descripción-de-componentes)
 - [Instrucciones para descargar y ejecutar](#instrucciones-para-descargar-y-ejecutar)
-- [Solución](#solucion)
-- [Demostración del producto](#demostracion-del-producto)
-- [Conclusión](#conclusion)
+- [Demostración del producto](#demostración-del-producto)
+- [Solución](#solución)
 - [Contribuyentes al proyecto](#contribuyentes-al-proyecto)
 
 # Descripcion del proyecto
@@ -42,32 +41,31 @@ Generar un reporte semanal que incluya información sobre las órdenes completad
 
 - Angular 18
 - Tailwind CSS
-- C#
-- SQL Server
+- JSPDF html2canvas
 
 # Descripción de componentes
 
-Este sistema está compuesto por cinco componentes fundamentales, los cuales son:
+> Este sistema está compuesto por cinco componentes fundamentales, los cuales son:
 
-Login
+**Login**
 
--> En este punto, el usuario podrá ingresar al sistema utilizando sus credenciales
+En este punto, el usuario podrá ingresar al sistema utilizando sus credenciales
 
-Dashborad principal
+**Pantalla de inicio**
 
--> En este punto, el usuario tendrá acceso a diversas opciones y podrá elegir la consulta de su preferencia.
+En este punto, el usuario tendrá acceso a diversas opciones y podrá elegir la consulta de su preferencia.
 
-Reporte general
+**Reporte general**
 
--> En este punto,el usuario podrá visualizar los reportes semanales de todas las cuadrillas disponibles. Además, podrá consultar el detalle de cada orden de trabajo completada.
+En este punto,el usuario podrá visualizar los reportes semanales de todas las cuadrillas disponibles. Además, podrá consultar el detalle de cada orden de trabajo completada.
 
-Reporte por cuadrilla
+**Reporte por cuadrilla**
 
--> En este punto, el usuario podrá consultar el reporte semanal de una cuadrilla específica. Tras seleccionar esta opción, se le mostrará una pantalla en la que deberá ingresar el número de cuadrilla. El sistema generará un reporte con todas las órdenes terminadas durante la semana, el personal que formó parte de la cuadrilla y el bono económico obtenido.
+En este punto, el usuario podrá consultar el reporte semanal de una cuadrilla específica. Tras seleccionar esta opción, se le mostrará una pantalla en la que deberá ingresar el número de cuadrilla. El sistema generará un reporte con todas las órdenes terminadas durante la semana, el personal que formó parte de la cuadrilla y el bono económico obtenido.
 
-Reporte por empleado
+**Reporte por empleado**
 
--> En este punto, el usuario podrá consultar el historial de bonos de un colaborador específico. Al seleccionar esta opción, se le pedirá ingresar un número de empleado, y el sistema mostrará un reporte con todos los bonos obtenidos por dicho colaborador.
+En este punto, el usuario podrá consultar el historial de bonos de un colaborador específico. Al seleccionar esta opción, se le pedirá ingresar un número de empleado, y el sistema mostrará un reporte con todos los bonos obtenidos por dicho colaborador.
 
 # Instrucciones para descargar y ejecutar
 
@@ -89,15 +87,60 @@ Para ejecutar la funcionalidad principal del programa, deberás ejecutar el sigu
 ng serve --open
 ```
 
-# Solucion
-
-Este proyecto busca ofrecer, mediante una interfaz amigable e intuitiva, un medio ágil y sencillo que permita a cualquier colaborador ingresar su número de cuadrilla y consultar los empleados pertenecientes a ella, así como su respectivo puntaje total y la bonificación lograda durante la semana.
-
 # Demostración del producto
 
-<img src="public/image2.png" alt="Karma" whith="5vw">
+**Login**, el login cuenta con validaciones lo cual impide el inicio de sesión sino se llena correctamente alguno de los campos.
 
-<img src="public/image3.png" alt="Karma" whith="5vw">
+<img width="1440" alt="LoginValidation" src="https://github.com/user-attachments/assets/4d45debc-5125-4f87-a337-ca1e33ad869f">
+
+Una vez que se llenan correctamente las cajas de texto se habilita el botón de "Iniciar sesión"
+
+<img width="1440" alt="LoginUser" src="https://github.com/user-attachments/assets/a451b16b-1dad-468b-b652-651b1ef2819a">
+
+**Pantalla de inicio**, donde el usuario podrá elegir la consulta que deseé
+
+<img width="1440" alt="home2" src="https://github.com/user-attachments/assets/ff5ff9ea-f455-417d-9e4e-baf4b24824c8">
+
+**Reporte general**, aqui se visualiza el contenido general, enlistando las cuadrillas existentes.
+
+<img width="1440" alt="verCuadrillas" src="https://github.com/user-attachments/assets/c2afce17-1b40-488b-8f3e-1a2aaadcf1e4">
+
+En esta vista se despliega el contenido general por cuadrilla, es decir Lista de empleados y ordenes que pertenecen a esta cuadrilla.
+
+<img width="1440" alt="reporteCuadrilla" src="https://github.com/user-attachments/assets/92276eac-73f1-48aa-9531-5ed3464fb948">
+
+En esta parte de "Ver Detalle" se muestra mas a detalle de la orden que se deseé consultar.
+
+<img width="1440" alt="verDetalleCuadrilla" src="https://github.com/user-attachments/assets/0296be17-916a-436a-b496-dd633bd7796e">
+
+**Reporte por cuadrilla** en este apartado de busqueda con cuadrilla tenemos la vista en la cual podemos escribir el numero de cuadrilla que se desea consultar.
+
+<img width="1440" alt="busquedaCuadrilla" src="https://github.com/user-attachments/assets/32800a70-c2b9-4b91-8a10-b07ee6807361">
+
+Una vez que se da clic en buscar, se arroja la información unicamente de la cuadrilla que se solicitó.
+
+<img width="1440" alt="resultadoCuadrilla" src="https://github.com/user-attachments/assets/37dad8b0-163b-42cd-b8dd-ed0013f51e8b">
+
+Al seleccionar la cuadrilla mostrada, se muestra los detalles de esta cuadrilla al igual como se hace en la sección de /reporte-general, solo que en este apartado se introdujo el botón de **Generar PDF** el cual nos descarga automaticamente en el ordenador el pdf con la vista de los detalles de la cuadrilla.
+
+<img width="1440" alt="DetalleCuadrilla" src="https://github.com/user-attachments/assets/2807bc11-415c-407e-b8d1-5a7179435b7b">
+
+**Reporte por empleado** aqui se muestra un cuadro de busqueda por numero de empleado
+
+<img width="1440" alt="busquedaEmpleado" src="https://github.com/user-attachments/assets/2efa7ed9-8636-435b-ac01-0bcbb6ba27e8">
+
+Después se muestra la información correspondiente al empleado que se desea buscar
+
+<img width="1440" alt="mostrarEmpleado" src="https://github.com/user-attachments/assets/ec900a0a-aa9c-4463-ac86-9d40e79d7ff8">
+
+Al igual que la busqueda por cuadrilla se muestra un botón para descargar el reporte por empleado
+
+<img width="1440" alt="TrabajosEmpleado" src="https://github.com/user-attachments/assets/b64f6b0a-a820-42a8-9311-494595bfc52f">
+
+
+# Solución
+
+Este proyecto busca ofrecer, mediante una interfaz amigable e intuitiva, un medio ágil y sencillo que permita a cualquier colaborador ingresar su número de cuadrilla y consultar los empleados pertenecientes a ella, así como su respectivo puntaje total y la bonificación lograda durante la semana.
 
 # Contribuyentes al proyecto
 
